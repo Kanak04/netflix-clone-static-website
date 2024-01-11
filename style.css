@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: max(1400px, 100vw);
+    background-position: center center;
+    height: 75vh;
+    position: relative;
+}
+
+.main .box {
+    height: 75vh;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    padding: 5px;
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    font-size: 13px;
+}
+
+.content {
+    height: calc(75vh - 71px);
+    /*because nav bar is taking height of 62px +margin  */
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 10;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 23px;
+    padding: 0px 23px;
+}
+
+.content> :first-child {
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+
+.content> :nth-child(2) {
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+}
+
+.content :nth-child(3) {
+    font-weight: 200;
+    font-size: 19px;
+    text-align: center;
+}
+
+.content-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.sepration {
+    height: 8px;
+    background-color: rgb(56, 55, 55);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 600;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.lang {
+    background-color: rgba(30, 30, 30, 0.4);
+    color: white;
+    font-weight: 500;
+}
+
+.btn-red-sn {
+    background-color: red;
+    color: white;
+    margin: 8px;
+}
+
+.main input {
+    padding: 0.8rem 7.9rem 0.8rem 0.8rem;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(30, 30, 30, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 1000px){
+    .first{
+        flex-wrap: wrap;
+    }
+    .second{
+        flex-wrap: wrap;
+    }
+    .sec-img img{
+        width: 50vw;
+    }
+    .sec-sec-img{
+        left: 12%;
+        width: 180px;
+    }
+    .third{
+        flex-wrap: wrap;
+    }
+    .fourth{
+        flex-wrap: wrap;
+    }
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    padding: 79px;
+}
+
+.fir-img img {
+    width: 30vw;
+}
+
+.fir-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.fir-content> :first-child {
+    padding: 20px;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+
+.fir-content> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.fir-img {
+    position: relative;
+}
+
+.fir-img img {
+    position: relative;
+    z-index: 10;
+    width: 30vw;
+    /* margin-top: 11px; */
+}
+
+.fir-img video {
+    position: absolute;
+    top: 22%;
+    right: 14%;
+    z-index: -1;
+    max-width: 73%;
+    width: 100%;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    max-width: 75vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    padding: 69px;
+}
+
+.sec-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sec-content> :first-child {
+    padding: 20px;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+
+.sec-content> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sec-img {
+    position: relative;
+}
+
+.sec-img img {
+    position: relative;
+    z-index: -1;
+    width: 39vw;
+    /* margin-top: 11px; */
+}
+.sec-sec-img{
+    position: absolute;
+    display: flex;
+    right: 140px;
+    bottom: 8%;
+    width: 320px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    z-index: 10;
+    background-color: black;
+}
+
+.sec-sec-img .img1{
+    margin: 7px;
+}
+
+.sec-sec-img .img1 img{
+    width: 54px;
+    z-index: 10;
+
+}
+
+.sec-sec-img .text{
+    display: flex;
+    flex-direction: column;
+    margin: 13px;
+    margin-top: 18px;
+    font-weight: 400px;
+    font-size: 18px;
+}
+
+.sec-sec-img .text .text2{
+    color: #0071eb;
+}
+
+.sec-sec-img .img2{
+    width: 3rem;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    z-index: 10;
+    background-size: 100%;
+    margin-right: 5px;
+    font-size: 10px;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.third {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    padding: 79px;
+}
+
+
+
+.thi-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.thi-content> :first-child {
+    padding: 20px;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+
+.thi-content> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.thi-img {
+    position: relative;
+}
+
+.thi-img img {
+    position: relative;
+    z-index: 10;
+    width: 35vw;
+    /* margin-top: 11px; */
+}
+
+.thi-img video {
+    position: absolute;
+    top: 7%;
+    right: 22%;
+    z-index: -1;
+    max-width: 60%;
+    width: 100%;
+}
+
+.fourth {
+    display: flex;
+    justify-content: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    padding: 79px;
+}
+
+.for-img img {
+    width: 30vw;
+}
+
+.for-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.for-content> :first-child {
+    padding: 20px;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+
+.for-content> :nth-child(2) {
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+}
+
+.for-img {
+    position: relative;
+}
+
+.for-img img {
+    position: relative;
+    z-index: 10;
+    width: 30vw;
+    /* margin-top: 11px; */
+}
+
+.fifth{
+    max-width: 75vw;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.fifth .faq{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.faq-box:hover{
+    background-color: #414141;
+}
+.faq-box{
+    color: white;
+    transition: all 2s ease-out;
+    max-width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.faq-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    margin: auto;
+}
+
+.faq-content>:first-child{
+    text-align: center;
+}
+
+.faq-content input {
+    padding: 0.8rem 7.9rem 0.8rem 0.8rem;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(30, 30, 30, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+footer{
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    padding: 50px;
+    font-size: 15px;
+}
+
+footer span{
+    color: white
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer a{
+    font-size: 12px;
+    padding: 8px;
+    color: white;
+}
+
+.footer-items{
+    display: flex;
+    flex-direction: column;
+}
